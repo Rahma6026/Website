@@ -9,6 +9,7 @@
     <img src="1.gif" alt="Background GIF" class="back-image">
     <div class="navbar">
       <div class="icon">
+        <header>
         <h2 class="logo"></h2>
       </div>
       <div class="menu">
@@ -21,19 +22,88 @@
             <div class="dropdown-content">
               <a href="#">Doctor login</a>
               <a href="#">Patient login</a>
+            </header>
+              
             </div>
           </li>
         </ul>
+
       </div>
       <div class="search">
         <input class="srch" name="" placeholder="Type To Text">
-        <a href="#"><button class="btn">Search</button></a>
+        <button class="btn">Search</button>
       </div>
     </div>
     <div class="content">
       <h1>Health<br><span>In</span> <br>Sight</h1>
       <button class="cn"><a href="#">Hospitals List</a></button>
     </div>
+    <div class="wrapper">
+      <span class= "icon-close">
+        <ion-icon name="close-outline"></ion-icon>
+      </span>
+      <div class="from-box login">
+        <h2>Patient login</h2>
+        <form action= "#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="mail"></ion-icon>
+            </span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">
+            Remember me</label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit"class="btn1">Login</button>
+          <div class="login-register">
+            <p>Don't have an account?
+              <a href="#" class="register-link">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="from-box register">
+        <h2>Registration</h2>
+        <form action= "#">
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <input type="text" required>
+            <label>Username</label>
+          </div>
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <div class="remember-forgot">
+            <label><input type="checkbox">
+            agree to the trems & conditions</label>
+            <a href="#">Forgot Password</a>
+          </div>
+          <button type="submit"class="btn1">Login</button>
+          <div class="login-register">
+            <p>Already have an account?
+              <a href="#" class="login-link">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </div>
 </body>
 </html>
