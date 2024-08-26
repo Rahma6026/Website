@@ -217,51 +217,61 @@ background-color: #fff;
 .dropdown:hover .dropdown-content {
     display: block;
   }
-.wrapper{
-    position: relative;
+  .wrapper {
+    position: absolute; /* Change from relative to absolute */
+    top: 50%; /* Position 50% from the top */
+    left: 50%; /* Position 50% from the left */
+    transform: translate(-50%, -50%); /* Center the element */
     width: 400px;
     height: 440px;
     background: transparent;
-    border: 2px solid rgba(255,255,255,0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
     backdrop-filter: blue(20px);
-    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(0);
-    transition: transform.5s ease, height .2s ease;
+    transform: scale(0); /* Initial scale */
+    transition: transform .5s ease, height .2s ease;
 }
-.wrapper.active-popup { 
-    transform: scale(1);
+
+.wrapper.active-popup {
+    transform: translate(-50%, -50%) scale(1); /* Add translate(-50%, -50%) to maintain centering */
 }
+
 .wrapper.active {
     height: 520px;
 }
-.wrapper .from-box{
-    width: :100%;
+
+.wrapper .form-box {
+    width: 100%;
     padding: 40px;
 }
-.wrapper .from-box.login{
-   transition: transform .18s ease;
-   transform: translateX(0);
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
 }
 
-.wrapper.active .from-box.login{
+.wrapper.active .form-box.login {
     transition: none;
     transform: translateX(-400px);
 }
+
 .wrapper .form-box.register {
     position: absolute;
     transition: none;
     transform: translateX(400px);
-} 
-.wrapper.active .from-box.register{
+}
+
+.wrapper.active .form-box.register {
     transition: transform .18s ease;
     transform: translateX(0);
- }
-.wrapper .icon-close{
+}
+
+.wrapper .icon-close {
     position: absolute;
     top: 0;
     right: 0;
@@ -273,9 +283,9 @@ background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-   border-bottom-left-radius: 20px;
-   cursor: pointer;
-   z-index: 1;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
 }
 .from-box h2{
     font-size: 2em;
