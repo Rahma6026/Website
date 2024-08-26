@@ -238,7 +238,7 @@ background-color: #fff;
 }
 
 .wrapper.active-popup {
-    transform: translate(-50%, -50%) scale(1); /* Add translate(-50%, -50%) to maintain centering */
+    transform: translate(-50%, -50%) scale(1); 
 }
 
 .wrapper.active {
