@@ -218,10 +218,10 @@ background-color: #fff;
     display: block;
   }
   .wrapper {
-    position: absolute; /* Change from relative to absolute */
-    top: 50%; /* Position 50% from the top */
-    left: 50%; /* Position 50% from the left */
-    transform: translate(-50%, -50%); /* Center the element */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     width: 400px;
     height: 440px;
     background: transparent;
@@ -233,7 +233,7 @@ background-color: #fff;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(0); /* Initial scale */
+    transform: scale(0); 
     transition: transform .5s ease, height .2s ease;
 }
 
